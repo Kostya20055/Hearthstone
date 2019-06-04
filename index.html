@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-image: url(bg.jpg);">
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		let card =["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png","super.png"];
+
+
+
+		let getRandom = function(){
+			let random = Math.random()*4
+			let round = Math.round(random);
+			return round;
+		}
+
+
+		let getRandom1 = function(){
+			let random = Math.random()*11
+			let round = Math.round(random);
+			return round;
+		}
+		
+			
+			let cart = function(arg){
+				for(let index = 0; index<arg; index = index + 1){
+				let elem = document.createElement("img");
+				document.body.appendChild(elem);
+				 elem.src = card[getRandom1()]
+				elem.style.height = "300px";
+				elem.style.width = "200px";
+				
+
+				}	
+			} 
+
+
+
+
+
+	</script>
+</body>
+</html>
